@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "a2f824744fad8e4824a43f2671a8f780"
+name = "test-cf"
+handle = "test-cf"
+application_url = "https://example.com/"
+embedded = true
+
+[build]
+dev_store_url = "quickstart-1ec5319e.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [ "https://example.com/api/auth" ]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
